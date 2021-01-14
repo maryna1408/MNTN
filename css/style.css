@@ -1,0 +1,232 @@
+/*=========================CSS RESET START=============================*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*=========================CSS RESET END=============================*/
+
+/*=========================FONTS START=============================*/
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+ @font-face{font-family:"Font Awesome 5 Pro";
+  font-style:normal;
+  font-weight:400;
+  font-display:block;
+  src: url(../fonts/fa-regular-400.woff2) format("woff2")}
+  .far{font-family:"Font Awesome 5 Pro";font-weight:400}
+
+
+/*=========================FONTS END=============================*/
+
+/*=========================COMMON STYLES START=============================*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+
+}
+body {
+    padding-bottom: 1000px;
+  background: url('../images/pic.jpg') no-repeat ;
+  background-size: 100% auto;
+  background-position: center 0;
+  color: #FFFFFF;
+}
+a,
+::before,
+::after {
+  display: inline-flex;
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  font-weight: inherit;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+}
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/*=========================COMMON STYLES END=============================*/
+
+/*=========================PAGE STYLES START===========================*/
+.header{
+  padding: 48px 0;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav a{
+  padding: 10px;
+}
+.nav a:nth-child(n+2){
+  margin-left: 30px;
+}
+.logo{
+  text-transform: uppercase;
+}
+.fa-user-circle:before {
+  content: "\f2bd"; 
+  margin: 10px;
+  color: aliceblue;
+}
+/*=========================PAGE STYLES END===========================*/
