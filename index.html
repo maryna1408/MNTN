@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preload" href="css/style.css" as="font"
+    type="style"
+    crossorigin />
+    <link rel="preload" href="fonts/Gilroy/Gilroy-Medium.woff" as="font"
+    type="font/woff"
+    crossorigin />
+    <link rel="preload" href="fonts/Gilroy/Gilroy-Bold.woff" as="font"
+    type="font/woff"
+    crossorigin />
+    <link rel="preload" href="fonts/Gilroy/Gilroy-ExtraBold.woff" as="font"
+    type="font/woff"
+    crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="fonts/Gilroy/Gilroy-Medium.woff">
-    <link rel="preconnect" href="fonts/Gilroy/Gilroy-Bold.woff">
-    <link rel="preconnect" href="fonts/Gilroy/Gilroy-ExtraBold.woff">
+    <meta name="description"
+      content="Be Prepared For The Mountains And Beyond!">
     <title>MNTN</title>
-    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="container wide-container">
         <nav class="navbar">
-          <a href="\" class="logo">mntn</a>
+          <a href="index.html" class="logo">mntn</a>
           <ul class="nav">
             <li><a class="hover-opacity" href="#">Equipment</a></li>
             <li><a class="hover-opacity" href="#">About us</a></li>
@@ -25,41 +36,143 @@
       </div>
     </header>
     <div class="hero">
-      <div class="container">
-        
+      <div class="container hero-container wide-container">
+        <ul class="sci">
+          <li><a class="follow hover-opacity" href="#">Follow us</a></li>
+          <li>
+            <a class="hover-opacity" href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a class="hover-opacity" href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+        </ul>
+        <!-- Slider main container -->
+        <div class="swiper-container slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <span class="rule-span"><i class="far fa-horizontal-rule"></i> A Hiking guide</span>
+              <h1>Be Prepared For The Mountains And Beyond!</h1>
+              <button class="arrow-button hover-opacity">
+                scroll down <i class="far fa-long-arrow-down arrow"></i>
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <h1>Slide 2</h1>
+            </div>
+            <div class="swiper-slide"><h1>Slide 3</h1></div>
+            <div class="swiper-slide">
+              <h1>Slide 4</h1>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
       </div>
     </div>
-      <main class="main">
-        <div class="container">
-            <div class="section">
-              <div class="content">
-                <span class="content-span"><i class="far fa-horizontal-rule"></i> Get started</span>
-                <h2>What level of hiker are you?</h2>
-                <p class="content-p">Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker?</p>
-                <button class="content-button hover-opacity">read more<i class="fas fa-long-arrow-right arrow"></i></button>
-              </div>
-              <img height="0" width="0" loading="lazy" src="images/get-started.webp" alt="get-started" class="image">
-            </div>
-            <div class="section reverse-section">
-              <div class="content">
-                <span class="content-span"><i class="far fa-horizontal-rule"></i> hiking essentials</span>
-                <h2>Picking The Right Hiking Gear!</h2>
-                <p class="content-p">The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have.
-                  Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet.</p>
-                  <button class="content-button hover-opacity">read more<i class="fas fa-long-arrow-right arrow"></i></button>
-              </div>
-              <img height="0" width="0" loading="lazy" src="images/hiking-essentials.webp" alt="hiking-essentials" class="image">
-            </div>
-            <div class="section">
-              <div class="content">
-                <span class="content-span"><i class="far fa-horizontal-rule rule"></i> Where you go is the key</span>
-                <h2>Understand Your Map & Timing</h2>
-                <p class="content-p">To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the junction..</p>
-                <button class="content-button hover-opacity">read more<i class="fas fa-long-arrow-right arrow"></i></button>
-              </div>
-              <img height="0" width="0" loading="lazy" src="images/where-you-go.webp" alt="where-you-go" class="image">
-            </div>
+    <main class="main">
+      <div class="container">
+        <div class="section">
+          <div class="content first-content">
+            <span class="rule-span gold-color"><i class="far fa-horizontal-rule"></i> Get started</span>
+            <h2>What level of hiker are you?</h2>
+            <p class="content-p">
+              Determining what level of hiker you are can be an important tool when planning future hikes. This hiking
+              level guide will help you plan hikes according to different hike ratings set by various websites like All
+              Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or
+              expert backpacker?
+            </p>
+            <button class="arrow-button gold-color hover-opacity">
+              read more<i class="far fa-long-arrow-right arrow"></i>
+            </button>
+          </div>
+          <img height="0" width="0" loading="lazy" src="images/get-started.webp" alt="get-started" class="image" />
         </div>
-      </main>
+        <div class="section reverse-section">
+          <div class="content second-content reverse-content">
+            <span class="rule-span gold-color"><i class="far fa-horizontal-rule"></i> hiking essentials</span>
+            <h2>Picking The Right Hiking Gear!</h2>
+            <p class="content-p">
+              The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get
+              away with things you already have. Let’s start with clothing. A typical mistake hiking beginners make is
+              wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet.
+            </p>
+            <button class="carrow-button gold-color hover-opacity">
+              read more<i class="far fa-long-arrow-right arrow"></i>
+            </button>
+          </div>
+          <img
+            height="0"
+            width="0"
+            loading="lazy"
+            src="images/hiking-essentials.webp"
+            alt="hiking-essentials"
+            class="image"
+          />
+        </div>
+        <div class="section">
+          <div class="content third-content">
+            <span class="rule-span gold-color"
+              ><i class="far fa-horizontal-rule rule"></i> Where you go is the key</span
+            >
+            <h2>Understand Your Map & Timing</h2>
+            <p class="content-p">
+              To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the
+              guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I
+              hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the junction..
+            </p>
+            <button class="arrow-button gold-color hover-opacity">
+              read more<i class="far fa-long-arrow-right arrow"></i>
+            </button>
+          </div>
+          <img height="0" width="0" loading="lazy" src="images/where-you-go.webp" alt="where-you-go" class="image" />
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div>
+          <div class="logo footer-logo">mntn</div>
+          <p class="footer-p">Get out there & discover your next slope, mountain & destination!</p>
+          <p class="copyright">Copyright 2019 MNTN, Inc. Terms & Privacy</p>
+        </div>
+        <div class="footer-navbar">
+          <div>
+            <h3 class="gold-color">More on The Blog</h3>
+            <ul class="dropmenu">
+              <li><a href="#">About MNTN</a></li>
+              <li><a href="#">Contributors & Writers</a></li>
+              <li><a href="#">Write For Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="gold-color">More on MNTN</h3>
+            <ul class="dropmenu">
+              <li><a href="#">The Team</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <!-- <script>
+      const heroSlider = new Swiper(".slider", {
+        slidesPerView: 1,
+        direction: "vertical",
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          draggable: true,
+        },
+        });
+    </script> -->
   </body>
 </html>
