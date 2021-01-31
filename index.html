@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="fonts/Gilroy/Gilroy-Medium.woff">
+    <link rel="preconnect" href="fonts/Gilroy/Gilroy-Bold.woff">
+    <link rel="preconnect" href="fonts/Gilroy/Gilroy-ExtraBold.woff">
     <title>MNTN</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -14,11 +16,11 @@
         <nav class="navbar">
           <a href="\" class="logo">mntn</a>
           <ul class="nav">
-            <li><a href="#">Equipment</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a class="hover-opacity" href="#">Equipment</a></li>
+            <li><a class="hover-opacity" href="#">About us</a></li>
+            <li><a class="hover-opacity" href="#">Blog</a></li>
           </ul>
-          <button class="account-button"><i class="far fa-user-circle user-icon"></i>Account</button>
+          <button class="account-button hover-opacity"><i class="far fa-user-circle user-icon"></i>Account</button>
         </nav>
       </div>
     </header>
@@ -26,30 +28,38 @@
       <div class="container">
         
       </div>
+    </div>
       <main class="main">
         <div class="container">
-          <article class="sections">
-            <section class="get-started flex">
+            <div class="section">
               <div class="content">
+                <span class="content-span"><i class="far fa-horizontal-rule"></i> Get started</span>
                 <h2>What level of hiker are you?</h2>
+                <p class="content-p">Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker?</p>
+                <button class="content-button hover-opacity">read more<i class="fas fa-long-arrow-right arrow"></i></button>
               </div>
-              <img src="images/get-started.webp" alt="get-started" class="image">
-            </section>
-            <section class="hiking-essentials flex">
-              <img src="images/hiking-essentials.webp" alt="hiking-essentials" class="image">
+              <img height="0" width="0" loading="lazy" src="images/get-started.webp" alt="get-started" class="image">
+            </div>
+            <div class="section reverse-section">
               <div class="content">
+                <span class="content-span"><i class="far fa-horizontal-rule"></i> hiking essentials</span>
                 <h2>Picking The Right Hiking Gear!</h2>
+                <p class="content-p">The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have.
+                  Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet.</p>
+                  <button class="content-button hover-opacity">read more<i class="fas fa-long-arrow-right arrow"></i></button>
               </div>
-            </section>
-            <section class="where-you-go flex">
+              <img height="0" width="0" loading="lazy" src="images/hiking-essentials.webp" alt="hiking-essentials" class="image">
+            </div>
+            <div class="section">
               <div class="content">
+                <span class="content-span"><i class="far fa-horizontal-rule rule"></i> Where you go is the key</span>
                 <h2>Understand Your Map & Timing</h2>
+                <p class="content-p">To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the junction..</p>
+                <button class="content-button hover-opacity">read more<i class="fas fa-long-arrow-right arrow"></i></button>
               </div>
-              <img src="images/where-you-go.webp" alt="where-you-go" class="image">
-            </section>
-          </article>
+              <img height="0" width="0" loading="lazy" src="images/where-you-go.webp" alt="where-you-go" class="image">
+            </div>
         </div>
       </main>
-    </div>
   </body>
 </html>
