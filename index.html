@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preload" href="css/style.css" as="font"
-    type="style"
-    crossorigin />
+    <link rel="preload" href="css/style.css" as="font" type="text/plain/">
     <link rel="preload" href="fonts/Gilroy/Gilroy-Medium.woff" as="font"
     type="font/woff"
     crossorigin />
@@ -15,6 +13,7 @@
     crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous"> -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
@@ -27,9 +26,9 @@
         <nav class="navbar">
           <a href="index.html" class="logo">mntn</a>
           <ul class="nav">
-            <li><a class="hover-opacity" href="#">Equipment</a></li>
-            <li><a class="hover-opacity" href="#">About us</a></li>
-            <li><a class="hover-opacity" href="#">Blog</a></li>
+            <li><a  class="hover-opacity" href="/">Equipment</a></li>
+            <li><a  class="hover-opacity" href="/">About us</a></li>
+            <li><a  class="hover-opacity" href="/">Blog</a></li>
           </ul>
           <button class="account-button hover-opacity"><i class="far fa-user-circle user-icon"></i>Account</button>
         </nav>
@@ -38,12 +37,12 @@
     <div class="hero">
       <div class="container hero-container wide-container">
         <ul class="sci">
-          <li><a class="follow hover-opacity" href="#">Follow us</a></li>
+          <li><a class="follow hover-opacity" href="/">Follow us</a></li>
           <li>
-            <a class="hover-opacity" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="hover-opacity" href="/" aria-label="Link to Instagram"><i class="fab fa-instagram"></i></a>
           </li>
           <li>
-            <a class="hover-opacity" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="hover-opacity" href="/" aria-label="Link to Twitter"><i class="fab fa-twitter"></i></a>
           </li>
         </ul>
         <!-- Slider main container -->
@@ -59,18 +58,32 @@
               </button>
             </div>
             <div class="swiper-slide">
-              <h1>Slide 2</h1>
+              <span class="rule-span"><i class="far fa-horizontal-rule"></i> A Hiking guide</span>
+              <h1>Be Prepared For The Mountains And Beyond!</h1>
+              <button class="arrow-button hover-opacity">
+                scroll down <i class="far fa-long-arrow-down arrow"></i>
+              </button>
             </div>
-            <div class="swiper-slide"><h1>Slide 3</h1></div>
+            <div class="swiper-slide"><span class="rule-span"><i class="far fa-horizontal-rule"></i> A Hiking guide</span>
+              <h1>Be Prepared For The Mountains And Beyond!</h1>
+              <button class="arrow-button hover-opacity">
+                scroll down <i class="far fa-long-arrow-down arrow"></i>
+              </button></div>
             <div class="swiper-slide">
-              <h1>Slide 4</h1>
+              <span class="rule-span"><i class="far fa-horizontal-rule"></i> A Hiking guide</span>
+              <h1>Be Prepared For The Mountains And Beyond!</h1>
+              <button class="arrow-button hover-opacity">
+                scroll down <i class="far fa-long-arrow-down arrow"></i>
+              </button>
             </div>
           </div>
-          <!-- If we need pagination -->
+          <div class="slider-controls">
+            <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
 
           <!-- If we need scrollbar -->
           <div class="swiper-scrollbar"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -90,7 +103,7 @@
               read more<i class="far fa-long-arrow-right arrow"></i>
             </button>
           </div>
-          <img height="0" width="0" loading="lazy" src="images/get-started.webp" alt="get-started" class="image" />
+          <img height="1" width="1" loading="lazy" src="images/get-started.webp" alt="get-started" class="image reverse-image" />
         </div>
         <div class="section reverse-section">
           <div class="content second-content reverse-content">
@@ -106,8 +119,8 @@
             </button>
           </div>
           <img
-            height="0"
-            width="0"
+            height="1"
+            width="1"
             loading="lazy"
             src="images/hiking-essentials.webp"
             alt="hiking-essentials"
@@ -129,13 +142,13 @@
               read more<i class="far fa-long-arrow-right arrow"></i>
             </button>
           </div>
-          <img height="0" width="0" loading="lazy" src="images/where-you-go.webp" alt="where-you-go" class="image" />
+          <img height="1" width="1" loading="lazy" src="images/where-you-go.webp" alt="where-you-go" class="image" />
         </div>
       </div>
     </main>
     <footer class="footer">
       <div class="container footer-container">
-        <div>
+        <div class="footer-content">
           <div class="logo footer-logo">mntn</div>
           <p class="footer-p">Get out there & discover your next slope, mountain & destination!</p>
           <p class="copyright">Copyright 2019 MNTN, Inc. Terms & Privacy</p>
@@ -144,35 +157,27 @@
           <div>
             <h3 class="gold-color">More on The Blog</h3>
             <ul class="dropmenu">
-              <li><a href="#">About MNTN</a></li>
-              <li><a href="#">Contributors & Writers</a></li>
-              <li><a href="#">Write For Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
+              <li><a  href="/">About MNTN</a></li>
+              <li><a  href="/">Contributors & Writers</a></li>
+              <li><a  href="/">Write For Us</a></li>
+              <li><a  href="/">Contact Us</a></li>
+              <li><a  href="/">Privacy Policy</a></li>
             </ul>
           </div>
           <div>
             <h3 class="gold-color">More on MNTN</h3>
             <ul class="dropmenu">
-              <li><a href="#">The Team</a></li>
-              <li><a href="#">Jobs</a></li>
-              <li><a href="#">Press</a></li>
+              <li><a  href="/">The Team</a></li>
+              <li><a  href="/">Jobs</a></li>
+              <li><a  href="/">Press</a></li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <!-- <script>
-      const heroSlider = new Swiper(".slider", {
-        slidesPerView: 1,
-        direction: "vertical",
-        scrollbar: {
-          el: '.swiper-scrollbar',
-          draggable: true,
-        },
-        });
-    </script> -->
+    <link rel="preload" href="css/swiper-bundle.css" as="style">
+    <link rel="stylesheet" href="css/swiper-bundle.css" />
+    <script defer src="js/swiper-bundle.js"></script>
+    <script defer src="js/app.js"></script>
   </body>
 </html>

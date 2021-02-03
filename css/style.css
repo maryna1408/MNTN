@@ -5,18 +5,21 @@
   src: url('../fonts/Gilroy/Gilroy-ExtraBold.woff') format('woff');
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Gilroy';
   src: url('../fonts/Gilroy/Gilroy-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Gilroy';
   src: url('../fonts/Gilroy/Gilroy-ExtraBold.woff') format('woff');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 
@@ -386,7 +389,7 @@ h3{
   align-items: center;
 }
 .hero{
-  background:  linear-gradient(160deg, #0B1D26, transparent 45%) ,linear-gradient(0deg, #0B1D26, transparent 20%), url('../images/pic.webp') no-repeat center 0 / cover;
+  background:  linear-gradient(160deg, #0B1D26, transparent 45%) ,linear-gradient(0deg, #0B1D26, transparent 20%), url('../images/pic.webp') no-repeat center / cover, var(--theme-color);
   padding: 277px 0;
   min-height: 1730px;
 }
@@ -397,32 +400,39 @@ h3{
   content: "\f099";
 }
 .sci{
-  margin-right: 398px;
+  display: flex;
+  align-items: center;
+  transform-origin: 0 100%;
+  transform: rotate(90deg) translateX(-50%);
 }
 .sci a{
   transition: .3s;
 }
 .sci li:nth-child(n+2){
-  margin-top: 30px;
+  margin-left: 30px;
+  transform: rotate(-90deg);
 }
 .follow{
   width: 77px;
-  /* transform: rotate(90deg); */
 }
 .fa-long-arrow-down::before{
   content: "\f175";
+}
+.slider{
+  height: 300px;
+  width: 1000px;
 }
 /*=========================HERO END===========================*/
 
 /*=========================MAIN START===========================*/
 .main{
-  margin: -200px;
+  margin-top: -200px;
   padding-bottom: 200px;
 }
 .section{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding-bottom: 200px;
 }
 .image{
@@ -430,16 +440,11 @@ h3{
   height: 720px;
 }
 .content{
-  padding: 0 114px;
   position: relative;
 }
 .reverse-section{
   display: flex;
   flex-direction: row-reverse;
-}
-.reverse-content{
-  margin-right: 0;
-  margin-left: 262px;
 }
 
 .fa-horizontal-rule::before{
@@ -495,7 +500,7 @@ h3{
 }
 .dropmenu li{
   padding: 8px 0;
-  /* font-weight: 500; */
+  font-weight: 500;
 }
 .dropmenu li:hover{
   text-decoration: underline;
@@ -503,10 +508,137 @@ h3{
 .footer-logo{
   padding-bottom: 24px;
 }
+.footer-content{
+  position: relative;
+  width: 360px;
+}
 .copyright{
   opacity: .5;
-  /* font-weight: 500; */
+  font-weight: 500;
+  position: absolute;
+  bottom: 0;
 }
 /*=========================FOOTER END===========================*/
 
 /*=========================PAGE STYLES END===========================*/
+
+/*=========================ADAPTATION START===========================*/
+
+/* XX-Large devices (larger desktops) */
+/* No media query since the xxl breakpoint has no upper bound on its width */
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  .wide-container{
+    max-width: auto;
+    padding: 0 20px;
+  }
+  .container{
+    padding: 0 40px;
+    min-width: auto;
+  }
+  h1{
+    font-size: 70px;
+  }
+  h2{
+    font-size: 55px;
+  }
+  .image{
+    width: 400px;
+    height: auto;
+  }
+  /* .footer-navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+  } */
+  .header{
+    padding: 30px 0;
+  }
+  .hero{
+    min-height: 1300px;
+  }
+  .main{
+  margin-top: -150px;
+  padding-bottom: 20px;
+}
+  .footer{
+    padding-bottom: 150px;
+  }
+}
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  body{
+    font-size: 16px;
+  }
+  h1{
+    font-size: 60px;
+  }
+  h2{
+    font-size: 40px;
+  }
+  .hero{
+    min-height: 1100px;
+  }
+  .main{
+    margin-top: -100px;
+    padding-bottom: 20px;
+  }
+  .image{
+    width: 300px;
+    height: auto;
+  }
+  .content-p{
+    width: 500px;
+  }
+  .footer-navbar{
+    width: 440px;
+  }
+  h3{
+    font-size: 20px;
+  }
+}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  h1{
+    font-size: 45px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  .content-p{
+    width: 400px;
+  }
+  .hero{
+    padding: 220px 0;
+  }
+  /* .image{
+    width: 200px;
+  } */
+  .content::before{
+    font-size: 180px;
+    top: -125px;
+  }
+  .hero{
+    min-height: 900px;
+  }
+  .main{
+    margin-top: -60px;
+    padding-bottom: 20px;
+  }
+  .section{
+    padding-bottom: 140px;
+  }
+  .footer-navbar{
+    width: 350px;
+  }
+  .slider{
+    height: 210px;
+  }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) and (min-width: 320px) {}
+
+/*=========================ADAPTATION END===========================*/
