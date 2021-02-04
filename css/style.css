@@ -458,7 +458,7 @@ h3{
   align-items: center;
   transition: .3s;
 }
-.fa-long-arrow-right::before{
+.fa-long-arrow-alt-right::before{
   content: "\f178";
 }
 .content::before{
@@ -593,6 +593,9 @@ h3{
   .content{
     width: 546px;
   }
+  .follow{
+    width: 70px;
+  }
 }
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
@@ -693,17 +696,26 @@ h3{
     padding-bottom: 90px;
   }
   .section{
-    padding-bottom: 110px;
+    padding-bottom: 120px;
+  }
+  .sci li:nth-child(n+2){
+    margin-left: 20px;
+  }
+  .follow{
+    width: 51px;
   }
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) and (min-width: 320px) {
   h1{
     font-size: 25px;
-  }
-  .sci{
-    display: none;
-  }
+    }
+    .sci{
+      transform: rotate(90deg) translateX(-80%);
+    }
+    .hero-container .slider{
+      margin-left: -15%;
+    }
   .logo{
     font-size: 20px;
   }
@@ -713,8 +725,15 @@ h3{
   .nav li{
     font-weight: 500;
   }
-  .image{
+  /* .image{
     display: none;
+  } */
+  .section{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .content{
+    padding-bottom: 40px;
   }
   .footer-container{
     padding: 0 15px;
@@ -736,9 +755,9 @@ h3{
     font-size: 12px;
     padding-left: 8px;
   }
-  /* .account-button{
+  .account-span{
     display: none;
-  } */
+  }
 }
 
 /*=========================ADAPTATION END===========================*/
